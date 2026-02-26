@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Donations – Charitics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-hero{background:var(--dark);padding:140px 8% 80px;text-align:center}
+    .page-hero h1{font-family:'Playfair Display',serif;color:#fff;font-size:clamp(2rem,4vw,3rem)}
+    .page-hero .breadcrumb{display:flex;justify-content:center;align-items:center;gap:10px;color:rgba(255,255,255,.5);font-size:.85rem;margin-top:12px}
+    .page-hero .breadcrumb a{color:var(--orange)}
+    .don-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    @media(max-width:900px){.don-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.don-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo"><div class="logo-icon">♥</div><span>Charitics</span></a>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html">Maison</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="donations.html" style="color:var(--orange)">Donation</a></li>
+    <li><a href="events.html">Événement</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="contact.html" class="btn-join"><span class="btn-join-icon"><i class="fa fa-chevron-right"></i></span>Rejoignez-nous</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Nos Donations</h1>
+  <div class="breadcrumb"><a href="index.html">Accueil</a> <i class="fa fa-chevron-right" style="font-size:.65rem"></i> Donations</div>
+</div>
+
+<section class="section-pad bg-white">
+  <div class="container">
+    <div class="don-grid">
+      <div class="dcard fade-in" style="flex:none;min-width:0"><div class="dcard-img"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&q=80" alt=""><span class="dcard-tag">Alimentation</span></div><div class="dcard-body"><div class="dprogress-row"><span class="dp-raised">Collecté : 25 000 $</span><span>Objectif : 30 000 $</span></div><div class="dprogress-bar"><div class="dprogress-fill" style="width:83%"></div></div><h3><a href="#">Compétences de vie pour les enfants d'Afrique du Sud</a></h3><p>Nous travaillons ensemble pour faire une différence durable.</p><a href="#" class="btn-donate">Faire un don</a></div></div>
+      <div class="dcard fade-in" style="flex:none;min-width:0"><div class="dcard-img"><img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=500&q=80" alt=""><span class="dcard-tag">Éducation</span></div><div class="dcard-body"><div class="dprogress-row"><span class="dp-raised">Collecté : 18 000 $</span><span>Objectif : 25 000 $</span></div><div class="dprogress-bar"><div class="dprogress-fill" style="width:72%"></div></div><h3><a href="#">Éducation pour tous les enfants défavorisés</a></h3><p>Nous travaillons ensemble pour faire une différence durable.</p><a href="#" class="btn-donate">Faire un don</a></div></div>
+      <div class="dcard fade-in" style="flex:none;min-width:0"><div class="dcard-img"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=500&q=80" alt=""><span class="dcard-tag">Santé</span></div><div class="dcard-body"><div class="dprogress-row"><span class="dp-raised">Collecté : 32 000 $</span><span>Objectif : 40 000 $</span></div><div class="dprogress-bar"><div class="dprogress-fill" style="width:80%"></div></div><h3><a href="#">Soins de santé pour les communautés rurales</a></h3><p>Nous travaillons ensemble pour faire une différence durable.</p><a href="#" class="btn-donate">Faire un don</a></div></div>
+      <div class="dcard fade-in" style="flex:none;min-width:0"><div class="dcard-img"><img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=500&q=80" alt=""><span class="dcard-tag">Bénévolat</span></div><div class="dcard-body"><div class="dprogress-row"><span class="dp-raised">Collecté : 12 000 $</span><span>Objectif : 20 000 $</span></div><div class="dprogress-bar"><div class="dprogress-fill" style="width:60%"></div></div><h3><a href="#">Soutien aux bénévoles dans les zones rurales</a></h3><p>Nous travaillons ensemble pour faire une différence durable.</p><a href="#" class="btn-donate">Faire un don</a></div></div>
+      <div class="dcard fade-in" style="flex:none;min-width:0"><div class="dcard-img"><img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=500&q=80" alt=""><span class="dcard-tag">Enfants</span></div><div class="dcard-body"><div class="dprogress-row"><span class="dp-raised">Collecté : 20 000 $</span><span>Objectif : 28 000 $</span></div><div class="dprogress-bar"><div class="dprogress-fill" style="width:71%"></div></div><h3><a href="#">Protection et aide aux enfants vulnérables</a></h3><p>Nous travaillons ensemble pour faire une différence durable.</p><a href="#" class="btn-donate">Faire un don</a></div></div>
+      <div class="dcard fade-in" style="flex:none;min-width:0"><div class="dcard-img"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80" alt=""><span class="dcard-tag">Eau potable</span></div><div class="dcard-body"><div class="dprogress-row"><span class="dp-raised">Collecté : 28 000 $</span><span>Objectif : 35 000 $</span></div><div class="dprogress-bar"><div class="dprogress-fill" style="width:80%"></div></div><h3><a href="#">Accès à l'eau potable pour les villages africains</a></h3><p>Nous travaillons ensemble pour faire une différence durable.</p><a href="#" class="btn-donate">Faire un don</a></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© 2025 Charitics. Tous droits réservés</span><div><a href="#">Conditions générales</a><a href="#">Politique de confidentialité</a></div></div></div>
+</footer>
+<button class="back-to-top" id="backTop"><i class="fa fa-chevron-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>

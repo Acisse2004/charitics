@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>À propos – Charitics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-hero{background:var(--dark);padding:140px 8% 80px;text-align:center}
+    .page-hero h1{font-family:'Playfair Display',serif;color:#fff;font-size:clamp(2rem,4vw,3rem);margin-bottom:12px}
+    .page-hero p{color:rgba(255,255,255,.6);font-size:.95rem}
+    .page-hero .breadcrumb{display:flex;justify-content:center;align-items:center;gap:10px;color:rgba(255,255,255,.5);font-size:.85rem;margin-top:12px}
+    .page-hero .breadcrumb a{color:var(--orange)}
+    .mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:60px}
+    .mission-card{background:var(--light);border-radius:16px;padding:32px;text-align:center}
+    .mission-icon{width:60px;height:60px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:1.4rem;color:#fff}
+    .mission-card h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--dark);margin-bottom:10px}
+    .mission-card p{color:var(--gray);font-size:.9rem;line-height:1.7}
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo"><div class="logo-icon">♥</div><span>Charitics</span></a>
+  <ul class="nav-menu" id="navMenu">
+    <li class="has-drop"><a href="index.html">Maison <i class="fa fa-chevron-down"></i></a><div class="dropdown"><a href="index.html">Accueil 1</a><a href="index.html">Accueil 2</a></div></li>
+    <li><a href="about.html" style="color:var(--orange)">À propos</a></li>
+    <li class="has-drop"><a href="#">Pages <i class="fa fa-chevron-down"></i></a><div class="dropdown"><a href="services.html">Services</a><a href="team.html">Équipe</a><a href="faq.html">FAQ</a></div></li>
+    <li><a href="donations.html">Donation</a></li>
+    <li><a href="events.html">Événement</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="contact.html" class="btn-join"><span class="btn-join-icon"><i class="fa fa-chevron-right"></i></span>Rejoignez-nous</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>À propos de nous</h1>
+  <p>Découvrez notre mission et notre vision</p>
+  <div class="breadcrumb"><a href="index.html">Accueil</a> <i class="fa fa-chevron-right" style="font-size:.65rem"></i> À propos</div>
+</div>
+
+<section class="section-pad bg-white">
+  <div class="container grid-2">
+    <div class="about-visual fade-in">
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=700&q=80" alt="" class="about-main-img">
+      <div class="about-badge"><span class="badge-num">15+</span><span class="badge-txt">Années d'expérience</span></div>
+    </div>
+    <div class="about-text fade-in">
+      <span class="eyebrow">Notre histoire</span>
+      <h2 class="section-title">S'entraider peut rendre le monde meilleur</h2>
+      <p>Charitics est une organisation non gouvernementale fondée avec la mission de soutenir les communautés vulnérables à travers le monde. Depuis plus de 15 ans, nous œuvrons pour améliorer les conditions de vie des populations défavorisées.</p>
+      <p>Notre approche se base sur la collaboration, la transparence et l'impact durable. Nous travaillons avec des partenaires locaux et internationaux pour maximiser l'effet de chaque don reçu.</p>
+      <ul class="check-list">
+        <li>Aide alimentaire d'urgence et durable</li>
+        <li>Programmes d'éducation pour les enfants</li>
+        <li>Accès aux soins de santé primaires</li>
+        <li>Développement de l'économie locale</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="mission-grid">
+      <div class="mission-card fade-in"><div class="mission-icon"><i class="fa fa-heart"></i></div><h3>Notre Mission</h3><p>Améliorer les conditions de vie des personnes vulnérables grâce à des programmes d'aide durables et efficaces.</p></div>
+      <div class="mission-card fade-in"><div class="mission-icon"><i class="fa fa-eye"></i></div><h3>Notre Vision</h3><p>Un monde où chaque personne a accès aux ressources essentielles pour mener une vie digne et épanouie.</p></div>
+      <div class="mission-card fade-in"><div class="mission-icon"><i class="fa fa-hands-helping"></i></div><h3>Nos Valeurs</h3><p>Intégrité, solidarité, transparence et respect de la dignité humaine guident chacune de nos actions.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="counters">
+  <div class="counter-item"><span class="counter-num" data-target="260">0</span><span class="counter-lbl">Total Enfants heureux</span></div>
+  <div class="counter-item"><span class="counter-num" data-target="110">0</span><span class="counter-lbl">Total nos bénévoles</span></div>
+  <div class="counter-item"><span class="counter-num" data-target="190">0</span><span class="counter-lbl">Nos produits & dons</span></div>
+  <div class="counter-item"><span class="counter-num" data-target="560">0</span><span class="counter-lbl">Donateurs mondiaux</span></div>
+</div>
+
+<footer class="footer">
+  <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© 2025 Charitics. Tous droits réservés</span><div><a href="#">Conditions générales</a><a href="#">Politique de confidentialité</a></div></div></div>
+</footer>
+<button class="back-to-top" id="backTop"><i class="fa fa-chevron-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>

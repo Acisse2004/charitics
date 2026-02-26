@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charitics – ONG &amp; Association à but non lucratif</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">♥</div>
+    <span>Charitics</span>
+  </a>
+  <ul class="nav-menu" id="navMenu">
+    <li class="has-drop">
+      <a href="index.html">Maison <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown"><a href="index.html">Accueil 1</a><a href="index.html">Accueil 2</a></div>
+    </li>
+    <li><a href="about.html">À propos</a></li>
+    <li class="has-drop">
+      <a href="#">Pages <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projets</a>
+        <a href="team.html">Équipe</a>
+        <a href="pricing.html">Tarifs</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </li>
+    <li class="has-drop">
+      <a href="donations.html">Donation <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown">
+        <a href="donations.html">Liste des dons</a>
+        <a href="donations.html">Détails du don</a>
+      </div>
+    </li>
+    <li class="has-drop">
+      <a href="events.html">Événement <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown">
+        <a href="events.html">Événements</a>
+        <a href="events.html">Détails événement</a>
+      </div>
+    </li>
+    <li class="has-drop">
+      <a href="blog.html">Blog <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown">
+        <a href="blog.html">Blogs</a>
+        <a href="blog.html">Détails article</a>
+      </div>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <i class="fa fa-search nav-search"></i>
+    <a href="contact.html" class="btn-join">
+      <span class="btn-join-icon"><i class="fa fa-chevron-right"></i></span>
+      Rejoignez-nous
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-radial"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow"><span>♥</span> Changeons le monde ensemble</p>
+    <h1>Aissatou Cisse developpeuse web</h1>
+    <p class="hero-sub">Il est de notoriété publique qu'un lecteur sera distrait du contenu lisible d'une page lorsqu'il regarde sa mise en page.</p>
+    <div class="hero-cta">
+      <a href="donations.html" class="btn-primary">
+        <span class="btn-circle"><i class="fa fa-chevron-right"></i></span>
+        Faire un don
+      </a>
+      <div class="donors-pill">
+        <div class="donor-faces">
+          <div class="face f1">JD</div>
+          <div class="face f2">MK</div>
+          <div class="face f3">RA</div>
+        </div>
+        <div>
+          <span class="donors-count">2M+</span>
+          <span class="donors-text"> Donateurs actifs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-img-mask">
+      <img src="https://images.pexels.com/photos/1820559/pexels-photo-1820559.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sourire africain" />
+    </div>
+  </div>
+
+
+</section>
+
+<section class="about section-pad bg-light" id="about">
+  <div class="container grid-2">
+    <div class="about-visual fade-in">
+      <div class="about-blob"></div>
+      <div class="about-heart-wrap">
+        <svg viewBox="0 0 600 580" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="580">
+          <defs>
+            <clipPath id="heartClipPhoto">
+              <path d="M300,510 C300,510 30,340 30,168 C30,80 88,22 172,22 C220,22 262,48 300,90 C338,48 380,22 428,22 C512,22 570,80 570,168 C570,340 300,510 300,510 Z"/>
+            </clipPath>
+          </defs>
+          <!-- Coeur orange grand -->
+          <path d="M300,530 C300,530 15,350 15,162 C15,72 78,10 168,10 C220,10 265,38 300,82 C335,38 380,10 432,10 C522,10 585,72 585,162 C585,350 300,530 300,530 Z" fill="#F15A2B"/>
+          <!-- Photo clippée dans le coeur -->
+          <image href="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=700&q=80"
+            x="30" y="22" width="540" height="490"
+            preserveAspectRatio="xMidYMid slice"
+            clip-path="url(#heartClipPhoto)"/>
+          <!-- Badge 15+ en haut à droite du coeur -->
+          <rect x="370" y="55" width="148" height="82" rx="14" fill="#F15A2B"/>
+          <text x="444" y="104" text-anchor="middle" font-family="Playfair Display, serif" font-size="30" font-weight="800" fill="white">15+</text>
+          <text x="444" y="122" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)">Years Of Experience</text>
+        </svg>
+      </div>
+    </div>
+    <div class="about-text fade-in">
+      <span class="eyebrow">À propos de nous</span>
+      <h2 class="section-title">S'entraider peut rendre le monde meilleur</h2>
+      <p>Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut odit aut fugit. Les ONG du monde entier postulent et nous rejoignent pour accéder à plus de financement.</p>
+      <ul class="check-list">
+        <li>Il existe de nombreuses variations à résoudre</li>
+        <li>Nous aidons les communautés à se développer</li>
+        <li>Transparence et responsabilité totales</li>
+      </ul>
+      <div class="about-footer">
+        <a href="about.html" class="btn-primary">Explorer davantage</a>
+        <div class="phone-block">
+          <small>Appelez à tout moment</small>
+          <a href="tel:+612345678990">+61 2345 678 990</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="donations section-pad" id="donations">
+  <div class="donations-d-bg"></div>
+  <div class="container">
+    <div class="donations-top">
+      <div>
+        <span class="eyebrow">Aide &amp; Dons</span>
+        <h2 class="section-title">Inspirer et aider pour un meilleur mode de vie</h2>
+      </div>
+      <div class="donations-top-right">
+        <div class="donors-pill donors-pill--dark">
+          <div class="donor-faces">
+            <div class="face f1">JD</div>
+            <div class="face f2">MK</div>
+            <div class="face f3">RA</div>
+          </div>
+          <div>
+            <span class="donors-count donors-count--dark">2M+</span>
+            <span class="donors-text--dark"> Donateurs actifs</span>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button class="slider-arrow" id="slidePrev"><i class="fa fa-arrow-left"></i></button>
+          <button class="slider-arrow" id="slideNext"><i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="donations-slider-outer">
+    <div class="slider-viewport">
+      <div class="slider-track" id="sliderTrack">
+        <article class="dcard">
+          <div class="dcard-img"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&q=80" alt="Alimentation" /><span class="dcard-tag">Alimentation</span></div>
+          <div class="dcard-body">
+            <div class="dprogress-row"><span class="dp-raised">Collecté : 25 000 $</span><span>Objectif : 30 000 $</span></div>
+            <div class="dprogress-bar"><div class="dprogress-fill" style="width:83%"></div></div>
+            <h3><a href="donations.html">Compétences de vie pour les enfants d'Afrique du Sud</a></h3>
+            <p>Nous travaillons ensemble pour faire une différence durable.</p>
+            <a href="donations.html" class="btn-donate">Faire un don</a>
+          </div>
+        </article>
+        <article class="dcard">
+          <div class="dcard-img"><img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=500&q=80" alt="Éducation" /><span class="dcard-tag">Éducation</span></div>
+          <div class="dcard-body">
+            <div class="dprogress-row"><span class="dp-raised">Collecté : 18 000 $</span><span>Objectif : 25 000 $</span></div>
+            <div class="dprogress-bar"><div class="dprogress-fill" style="width:72%"></div></div>
+            <h3><a href="donations.html">Éducation pour tous les enfants défavorisés</a></h3>
+            <p>Nous travaillons ensemble pour faire une différence durable.</p>
+            <a href="donations.html" class="btn-donate">Faire un don</a>
+          </div>
+        </article>
+        <article class="dcard">
+          <div class="dcard-img"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=500&q=80" alt="Santé" /><span class="dcard-tag">Santé</span></div>
+          <div class="dcard-body">
+            <div class="dprogress-row"><span class="dp-raised">Collecté : 32 000 $</span><span>Objectif : 40 000 $</span></div>
+            <div class="dprogress-bar"><div class="dprogress-fill" style="width:80%"></div></div>
+            <h3><a href="donations.html">Soins de santé pour les communautés rurales</a></h3>
+            <p>Nous travaillons ensemble pour faire une différence durable.</p>
+            <a href="donations.html" class="btn-donate">Faire un don</a>
+          </div>
+        </article>
+        <article class="dcard">
+          <div class="dcard-img"><img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=500&q=80" alt="Bénévolat" /><span class="dcard-tag">Bénévolat</span></div>
+          <div class="dcard-body">
+            <div class="dprogress-row"><span class="dp-raised">Collecté : 12 000 $</span><span>Objectif : 20 000 $</span></div>
+            <div class="dprogress-bar"><div class="dprogress-fill" style="width:60%"></div></div>
+            <h3><a href="donations.html">Soutien aux bénévoles dans les zones rurales</a></h3>
+            <p>Nous travaillons ensemble pour faire une différence durable.</p>
+            <a href="donations.html" class="btn-donate">Faire un don</a>
+          </div>
+        </article>
+        <article class="dcard">
+          <div class="dcard-img"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500&q=80" alt="Événements" /><span class="dcard-tag">Événements</span></div>
+          <div class="dcard-body">
+            <div class="dprogress-row"><span class="dp-raised">Collecté : 8 000 $</span><span>Objectif : 15 000 $</span></div>
+            <div class="dprogress-bar"><div class="dprogress-fill" style="width:53%"></div></div>
+            <h3><a href="donations.html">Organisation d'événements caritatifs locaux</a></h3>
+            <p>Nous travaillons ensemble pour faire une différence durable.</p>
+            <a href="donations.html" class="btn-donate">Faire un don</a>
+          </div>
+        </article>
+        <article class="dcard">
+          <div class="dcard-img"><img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=500&q=80" alt="Enfants" /><span class="dcard-tag">Enfants</span></div>
+          <div class="dcard-body">
+            <div class="dprogress-row"><span class="dp-raised">Collecté : 20 000 $</span><span>Objectif : 28 000 $</span></div>
+            <div class="dprogress-bar"><div class="dprogress-fill" style="width:71%"></div></div>
+            <h3><a href="donations.html">Protection et aide aux enfants vulnérables</a></h3>
+            <p>Nous travaillons ensemble pour faire une différence durable.</p>
+            <a href="donations.html" class="btn-donate">Faire un don</a>
+          </div>
+        </article>
+        <article class="dcard">
+          <div class="dcard-img"><img src="https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?w=500&q=80" alt="Environnement" /><span class="dcard-tag">Environnement</span></div>
+          <div class="dcard-body">
+            <div class="dprogress-row"><span class="dp-raised">Collecté : 15 000 $</span><span>Objectif : 22 000 $</span></div>
+            <div class="dprogress-bar"><div class="dprogress-fill" style="width:68%"></div></div>
+            <h3><a href="donations.html">Préservation de l'environnement pour nos enfants</a></h3>
+            <p>Nous travaillons ensemble pour faire une différence durable.</p>
+            <a href="donations.html" class="btn-donate">Faire un don</a>
+          </div>
+        </article>
+        <article class="dcard">
+          <div class="dcard-img"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80" alt="Eau" /><span class="dcard-tag">Eau potable</span></div>
+          <div class="dcard-body">
+            <div class="dprogress-row"><span class="dp-raised">Collecté : 28 000 $</span><span>Objectif : 35 000 $</span></div>
+            <div class="dprogress-bar"><div class="dprogress-fill" style="width:80%"></div></div>
+            <h3><a href="donations.html">Accès à l'eau potable pour les villages africains</a></h3>
+            <p>Nous travaillons ensemble pour faire une différence durable.</p>
+            <a href="donations.html" class="btn-donate">Faire un don</a>
+          </div>
+        </article>
+      </div><!-- /slider-track -->
+    </div><!-- /slider-viewport -->
+  </div><!-- /donations-slider-outer -->
+</section>
+
+<div class="donate-section" id="donate" style="background:var(--orange);padding:50px 0;border-radius:20px;margin:0 20px 60px;">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;">
+
+    <!-- Gauche : formulaire sombre -->
+    <div style="background:rgba(10,15,30,0.85);border-radius:16px;padding:32px;position:relative;overflow:hidden;">
+      <!-- Image de fond sombre -->
+      <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80') center/cover;opacity:0.3;border-radius:16px;"></div>
+      <div style="position:relative;z-index:2;">
+        <h3 style="color:#fff;font-size:1.2rem;font-weight:700;margin-bottom:20px;">Faites un don maintenant, chers clients</h3>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;">
+          <button class="amt-btn active" data-v="10" style="background:var(--orange);color:#fff;border:none;padding:10px 18px;border-radius:8px;font-weight:700;cursor:pointer;">10 $</button>
+          <button class="amt-btn" data-v="20" style="background:rgba(255,255,255,0.15);color:#fff;border:none;padding:10px 18px;border-radius:8px;font-weight:700;cursor:pointer;">20 $</button>
+          <button class="amt-btn" data-v="30" style="background:rgba(255,255,255,0.15);color:#fff;border:none;padding:10px 18px;border-radius:8px;font-weight:700;cursor:pointer;">30 $</button>
+          <button class="amt-btn" data-v="40" style="background:rgba(255,255,255,0.15);color:#fff;border:none;padding:10px 18px;border-radius:8px;font-weight:700;cursor:pointer;">40 $</button>
+          <button class="amt-btn" data-v="50" style="background:rgba(255,255,255,0.15);color:#fff;border:none;padding:10px 18px;border-radius:8px;font-weight:700;cursor:pointer;">50 $</button>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;">
+          <input type="number" id="customAmt" value="10" style="flex:1;padding:12px 16px;border-radius:8px;border:none;font-size:1rem;background:#fff;color:#333;" />
+          <button class="btn-submit-donate" style="background:var(--orange);color:#fff;border:none;padding:12px 22px;border-radius:8px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;white-space:nowrap;">
+            <span style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.25);display:inline-flex;align-items:center;justify-content:center;"><i class="fa fa-chevron-right"></i></span>
+            Faites un don maintenant
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Droite : texte + barre progression -->
+    <div style="padding:10px 20px;">
+      <p style="color:rgba(255,255,255,0.9);font-size:.85rem;margin-bottom:10px;">♥ Faites un don maintenant</p>
+      <h2 style="color:#fff;font-family:'Playfair Display',serif;font-size:2rem;line-height:1.3;margin-bottom:24px;">Soutenez les enfants en collectant de précieux dons</h2>
+
+      <!-- Barre de progression -->
+      <div style="margin-bottom:8px;display:flex;justify-content:flex-end;">
+        <span style="color:#fff;font-weight:700;font-size:.9rem;">64%</span>
+      </div>
+      <div style="background:rgba(255,255,255,0.3);border-radius:10px;height:6px;position:relative;margin-bottom:12px;">
+        <div style="width:64%;background:#fff;border-radius:10px;height:6px;position:relative;">
+          <span style="position:absolute;right:-10px;top:-7px;width:20px;height:20px;background:var(--orange);border:3px solid #fff;border-radius:50%;display:block;"></span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;">
+        <span style="color:rgba(255,255,255,0.85);font-size:.82rem;">Montant récolté : 25 000 $</span>
+        <span style="color:rgba(255,255,255,0.85);font-size:.82rem;">Objectif : 30 000 $</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="counters">
+  <div class="counter-item">
+    <div class="circle-stat">
+      <div class="circle-back"><img src="https://images.pexels.com/photos/8432449/pexels-photo-8432449.jpeg" alt="" /></div>
+      <div class="circle-front"><i class="fa fa-child"></i><span class="counter-num" data-target="260">0</span><span class="counter-lbl">Total Enfants heureux</span></div>
+    </div>
+  </div>
+  <div class="counter-item">
+    <div class="circle-stat">
+      <div class="circle-back"><img src="https://images.pexels.com/photos/8432449/pexels-photo-8432449.jpeg" alt="" /></div>
+      <div class="circle-front"><i class="fa fa-hands-helping"></i><span class="counter-num" data-target="110">0</span><span class="counter-lbl">Total nos bénévoles</span></div>
+    </div>
+  </div>
+  <div class="counter-item">
+    <div class="circle-stat">
+      <div class="circle-back"><img src="https://images.pexels.com/photos/8432449/pexels-photo-8432449.jpeg" alt="" /></div>
+      <div class="circle-front"><i class="fa fa-gift"></i><span class="counter-num" data-target="190">0</span><span class="counter-lbl">Nos produits &amp; dons</span></div>
+    </div>
+  </div>
+  <div class="counter-item">
+    <div class="circle-stat">
+      <div class="circle-back"><img src="https://images.pexels.com/photos/8432449/pexels-photo-8432449.jpeg" alt="" /></div>
+      <div class="circle-front"><i class="fa fa-globe"></i><span class="counter-num" data-target="560">0</span><span class="counter-lbl">Donateurs mondiaux</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="events section-pad bg-light" id="events">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="eyebrow">Événements à venir</span>
+      <h2 class="section-title">Informations Charitics sur le programme des événements</h2>
+    </div>
+    <div class="events-grid">
+      <div class="ecard fade-in">
+        <div class="ecard-img"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80" alt="" /><div class="ecard-date">29<br />Juillet</div></div>
+        <div class="ecard-body"><h3><a href="events.html">Le responsable a désapprouvé le travail le plus récent.</a></h3><p>Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut.</p><div class="ecard-venue"><i class="fa fa-map-marker-alt"></i> 350 5th Ave, New York, NY</div><a href="events.html" class="btn-link">Détails de l'événement <i class="fa fa-arrow-right"></i></a></div>
+      </div>
+      <div class="ecard fade-in">
+        <div class="ecard-img"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&q=80" alt="" /><div class="ecard-date">29<br />Juillet</div></div>
+        <div class="ecard-body"><h3><a href="events.html">Réunion annuelle des bénévoles mondiaux 2025.</a></h3><p>Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut.</p><div class="ecard-venue"><i class="fa fa-map-marker-alt"></i> 350 5th Ave, New York, NY</div><a href="events.html" class="btn-link">Détails de l'événement <i class="fa fa-arrow-right"></i></a></div>
+      </div>
+      <div class="ecard fade-in">
+        <div class="ecard-img"><img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=400&q=80" alt="" /><div class="ecard-date">29<br />Juillet</div></div>
+        <div class="ecard-body"><h3><a href="events.html">Collecte de fonds pour les enfants africains.</a></h3><p>Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut.</p><div class="ecard-venue"><i class="fa fa-map-marker-alt"></i> 350 5th Ave, New York, NY</div><a href="events.html" class="btn-link">Détails de l'événement <i class="fa fa-arrow-right"></i></a></div>
+      </div>
+      <div class="ecard fade-in">
+        <div class="ecard-img"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&q=80" alt="" /><div class="ecard-date">29<br />Juillet</div></div>
+        <div class="ecard-body"><h3><a href="events.html">Conférence internationale sur l'aide humanitaire.</a></h3><p>Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut.</p><div class="ecard-venue"><i class="fa fa-map-marker-alt"></i> 350 5th Ave, New York, NY</div><a href="events.html" class="btn-link">Détails de l'événement <i class="fa fa-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="volunteer section-pad bg-white">
+  <div class="container grid-2">
+    <div class="vol-img fade-in"><img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=700&q=80" alt="Bénévolat" /></div>
+    <div class="vol-text fade-in">
+      <span class="eyebrow">Rejoignez-nous</span>
+      <h2 class="section-title">Pourquoi avons-nous besoin de vous comme bénévole</h2>
+      <p class="vol-intro">Nous aidons les entreprises à développer de puissantes stratégies de responsabilité sociale, de mécénat et d'engagement des employés.</p>
+      <div class="accordion">
+        <div class="acc-item open">
+          <div class="acc-header">Reconnaissance et accomplissement <span class="acc-icon"><i class="fa fa-plus"></i></span></div>
+          <div class="acc-body"><p>Consectetur adipiscing elit. Aenean scelerisque augue vitae consequat.</p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-header">Pourquoi nous rejoindre comme bénévole ? <span class="acc-icon"><i class="fa fa-plus"></i></span></div>
+          <div class="acc-body"><p>Consectetur adipiscing elit. Aenean scelerisque augue vitae consequat.</p></div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-header">Faites partie d'une communauté <span class="acc-icon"><i class="fa fa-plus"></i></span></div>
+          <div class="acc-body"><p>Consectetur adipiscing elit. Aenean scelerisque augue vitae consequat.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team section-pad bg-light" id="team">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="eyebrow">Notre équipe</span>
+      <h2 class="section-title">Professionnels dévoués à votre service</h2>
+    </div>
+    <div class="team-grid">
+      <div class="tcard fade-in">
+        <div class="tcard-img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="John Doe" /><div class="tcard-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="tcard-body"><h3>John Doe</h3><span>Directeur exécutif</span></div>
+      </div>
+      <div class="tcard fade-in">
+        <div class="tcard-img"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" alt="Sarah Johnson" /><div class="tcard-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="tcard-body"><h3>Sarah Johnson</h3><span>Coordinatrice des dons</span></div>
+      </div>
+      <div class="tcard fade-in">
+        <div class="tcard-img"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Michael Brown" /><div class="tcard-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="tcard-body"><h3>Michael Brown</h3><span>Responsable des opérations</span></div>
+      </div>
+      <div class="tcard fade-in">
+        <div class="tcard-img"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" alt="Emily Davis" /><div class="tcard-socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="tcard-body"><h3>Emily Davis</h3><span>Chargée de communication</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials section-pad" id="testimonials">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="eyebrow">Témoignages</span>
+      <h2 class="section-title" style="color:#fff">Ce qu'ils disent de Charitics</h2>
+      <p style="color:rgba(255,255,255,.5)">Praesent ut lacus a velit tincidunt aliquam a eget urna.</p>
+    </div>
+    <div class="testi-slider-viewport">
+      <div class="testi-slider-track" id="testiTrack">
+        <div class="testicard">
+          <div class="stars">★★★★★</div>
+          <p>Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros.</p>
+          <div class="testi-author"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="" /><div><strong>Esther Howard</strong><small>Designer Web</small></div></div>
+        </div>
+        <div class="testicard">
+          <div class="stars">★★★★★</div>
+          <p>Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros.</p>
+          <div class="testi-author"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="" /><div><strong>Marie Dupont</strong><small>Bénévole</small></div></div>
+        </div>
+        <div class="testicard">
+          <div class="stars">★★★★★</div>
+          <p>Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros.</p>
+          <div class="testi-author"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="" /><div><strong>Ahmed Hassan</strong><small>Donateur</small></div></div>
+        </div>
+        <div class="testicard">
+          <div class="stars">★★★★★</div>
+          <p>Cette organisation m'a profondément touché. Grâce à leurs efforts, des centaines d'enfants ont accès à une éducation de qualité.</p>
+          <div class="testi-author"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="" /><div><strong>Fatou Diallo</strong><small>Partenaire ONG</small></div></div>
+        </div>
+        <div class="testicard">
+          <div class="stars">★★★★★</div>
+          <p>J'ai rejoint Charitics il y a deux ans et depuis, j'ai vu des résultats concrets sur le terrain.</p>
+          <div class="testi-author"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="" /><div><strong>Lucas Martin</strong><small>Bénévole senior</small></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-dots" id="testiDots"></div>
+  </div>
+</section>
+
+<section class="blog section-pad bg-white" id="blog">
+  <div class="container blog-layout">
+    <div class="blog-left">
+      <span class="eyebrow">Dernier article de blog</span>
+      <h2 class="section-title">Lisez nos dernières actualités</h2>
+      <p>Nous aidons les entreprises à développer des stratégies efficaces en matière de responsabilité sociale des entreprises, d'octroi de subventions et d'engagement des employés.</p>
+      <div class="blog-nav">
+        <button class="slider-arrow" id="blogPrev"><i class="fa fa-arrow-left"></i></button>
+        <button class="slider-arrow" id="blogNext"><i class="fa fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="blog-slider-wrap">
+      <div class="blog-slider-viewport">
+        <div class="blog-slider-track" id="blogTrack">
+          <div class="bcard">
+            <div class="bcard-img"><img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=500&q=80" alt="" /><div class="bcard-date">15<br/>Déc</div></div>
+            <div class="bcard-body">
+              <div class="bcard-meta"><span><i class="fa fa-user"></i> Par l'administrateur</span><span class="bcat"><i class="fa fa-tag"></i> Donation</span></div>
+              <h3><a href="blog.html">Offrez l'éducation, c'est le plus beau cadeau qui soit.</a></h3>
+              <a href="blog.html" class="btn-link">En savoir plus <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="bcard">
+            <div class="bcard-img"><img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=500&q=80" alt="" /><div class="bcard-date">15<br/>Déc</div></div>
+            <div class="bcard-body">
+              <div class="bcard-meta"><span><i class="fa fa-user"></i> Par l'administrateur</span><span class="bcat"><i class="fa fa-tag"></i> Donation</span></div>
+              <h3><a href="blog.html">Ne considérez pas les océans comme des poubelles universelles.</a></h3>
+              <a href="blog.html" class="btn-link">En savoir plus <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="bcard">
+            <div class="bcard-img"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80" alt="" /><div class="bcard-date">15<br/>Déc</div></div>
+            <div class="bcard-body">
+              <div class="bcard-meta"><span><i class="fa fa-user"></i> Par l'administrateur</span><span class="bcat"><i class="fa fa-tag"></i> Nature</span></div>
+              <h3><a href="blog.html">Le soleil et le sable rendent les plages magnifiques.</a></h3>
+              <a href="blog.html" class="btn-link">En savoir plus <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="bcard">
+            <div class="bcard-img"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=500&q=80" alt="" /><div class="bcard-date">15<br/>Déc</div></div>
+            <div class="bcard-body">
+              <div class="bcard-meta"><span><i class="fa fa-user"></i> Par l'administrateur</span><span class="bcat"><i class="fa fa-tag"></i> Santé</span></div>
+              <h3><a href="blog.html">Ensemble pour un monde plus solidaire et équitable.</a></h3>
+              <a href="blog.html" class="btn-link">En savoir plus <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="bcard">
+            <div class="bcard-img"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&q=80" alt="" /><div class="bcard-date">15<br/>Déc</div></div>
+            <div class="bcard-body">
+              <div class="bcard-meta"><span><i class="fa fa-user"></i> Par l'administrateur</span><span class="bcat"><i class="fa fa-tag"></i> Bénévolat</span></div>
+              <h3><a href="blog.html">Rejoignez notre équipe de bénévoles engagés.</a></h3>
+              <a href="blog.html" class="btn-link">En savoir plus <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gallery-strip-viewport">
+  <div class="gallery-strip" id="galleryTrack">
+    <img src="https://images.pexels.com/photos/8432449/pexels-photo-8432449.jpeg" alt="" />
+    <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=300&q=80" alt="" />
+    <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=300&q=80" alt="" />
+    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=300&q=80" alt="" />
+    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300&q=80" alt="" />
+    <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=300&q=80" alt="" />
+    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=300&q=80" alt="" />
+    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=300&q=80" alt="" />
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-topbar-orange">
+    <div class="container footer-topbar-grid">
+      <div class="ftb-item">
+        <div class="ftb-icon-circle"><i class="fa fa-map-marker-alt"></i></div>
+        <div><small>Adresse</small><span>4648 Rocky Road Philadelphia PA, 1920</span></div>
+      </div>
+      <div class="ftb-item">
+        <div class="ftb-icon-circle"><i class="fa fa-envelope"></i></div>
+        <div><small>Envoyer un e-mail</small><a href="mailto:info@exemple.com">info@exemple.com</a></div>
+      </div>
+      <div class="ftb-item">
+        <div class="ftb-icon-circle"><i class="fa fa-phone"></i></div>
+        <div><small>Appelez les urgences</small><a href="tel:88012365499">+88 0123 654 99</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="container footer-main-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:16px">
+          <div class="logo-icon">♥</div><span>Charitics</span>
+        </a>
+        <p>Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, une lacinia curabitur lacinia mollis.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="about.html"><i class="fa fa-chevron-right"></i> À propos de nous</a></li>
+          <li><a href="services.html"><i class="fa fa-chevron-right"></i> Nos services</a></li>
+          <li><a href="blog.html"><i class="fa fa-chevron-right"></i> Nos blogs</a></li>
+          <li><a href="faq.html"><i class="fa fa-chevron-right"></i> FAQ</a></li>
+          <li><a href="contact.html"><i class="fa fa-chevron-right"></i> Contactez-nous</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Articles récents</h4>
+        <div class="recent-post">
+          <img src="https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?w=100&q=80" alt="" />
+          <div><small><i class="fa fa-calendar-alt"></i> 12 mai 2025</small><a href="blog.html">Il existe de nombreuses variantes de passages de</a></div>
+        </div>
+        <div class="recent-post">
+          <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=100&q=80" alt="" />
+          <div><small><i class="fa fa-calendar-alt"></i> 12 mai 2025</small><a href="blog.html">Il existe de nombreuses variantes de passages de</a></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contactez-nous</h4>
+        <p class="footer-contact-info"><i class="fa fa-envelope"></i> info@example.com</p>
+        <p class="footer-contact-info"><i class="fa fa-phone"></i> 123-456-7890</p>
+        <div class="newsletter-inline">
+          <input type="email" placeholder="Votre adresse e-mail" />
+          <button><i class="fa fa-arrow-right"></i></button>
+        </div>
+        <label class="check-label"><input type="checkbox" /> Je suis d'accord avec le <a href="#">politique de confidentialité</a></label>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-orange">
+    <div class="container footer-bottom-inner">
+      <span>© 2026 Charitics. Tous droits réservés.</span>
+      <div><a href="#">Conditions générales</a><a href="#">politique de confidentialité</a></div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backTop" aria-label="Haut de page"><i class="fa fa-chevron-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>

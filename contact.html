@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contactez-nous – Charitics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* ── HERO CONTACT ── */
+    .contact-hero {
+      position: relative;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 70px;
+      overflow: hidden;
+    }
+    .contact-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1400&q=80') center/cover no-repeat;
+    }
+    .contact-hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(10,15,30,.65);
+    }
+    .contact-hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .contact-hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,.15);
+      backdrop-filter: blur(6px);
+      padding: 8px 20px;
+      border-radius: 50px;
+      color: #fff;
+      font-size: .88rem;
+    }
+    .breadcrumb a { color: #fff; opacity: .8; }
+    .breadcrumb i { font-size: .7rem; opacity: .6; }
+
+    /* ── CARDS INFO ── */
+    .contact-cards {
+      padding: 70px 0 50px;
+      background: #fff;
+    }
+    .contact-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .ccard {
+      background: #f5f5f5;
+      border-radius: 16px;
+      padding: 36px 28px;
+      transition: box-shadow .3s, transform .3s;
+    }
+    .ccard:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,.1); }
+    .ccard-icon {
+      width: 60px; height: 60px;
+      background: var(--orange);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 1.4rem;
+      margin-bottom: 24px;
+    }
+    .ccard small { color: var(--gray); font-size: .82rem; display: block; margin-bottom: 6px; }
+    .ccard strong { color: var(--dark); font-size: 1.05rem; font-weight: 700; }
+
+    /* ── MAP ── */
+    .contact-map iframe {
+      width: 100%;
+      height: 420px;
+      border: none;
+      display: block;
+    }
+
+    /* ── FORM ── */
+    .contact-form-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .contact-form-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .contact-form-header .eyebrow { justify-content: center; }
+    .contact-form-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--dark);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .contact-form {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .cf-input {
+      width: 100%;
+      background: #f5f5f5;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: .95rem;
+      font-family: 'DM Sans', sans-serif;
+      color: var(--dark);
+      outline: none;
+      transition: border-color .3s, background .3s;
+    }
+    .cf-input:focus { border-color: var(--orange); background: #fff; }
+    .cf-input::placeholder { color: #aaa; }
+    textarea.cf-input { resize: vertical; min-height: 150px; margin-bottom: 0; }
+    .form-full { margin-bottom: 16px; }
+    .btn-contact {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--dark);
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 50px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      margin: 28px auto 0;
+      transition: background .3s, transform .3s;
+    }
+    .btn-contact:hover { background: var(--orange); transform: translateY(-2px); }
+    .btn-contact-icon {
+      width: 32px; height: 32px;
+      background: rgba(255,255,255,.2);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .8rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-cards-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">♥</div>
+      <span>Charitics</span>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li class="has-drop"><a href="#">Maison <i class="fa fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <a href="index.html">Accueil</a>
+        </div>
+      </li>
+      <li><a href="about.html">À propos</a></li>
+      <li class="has-drop"><a href="#">Pages <i class="fa fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <a href="#">Équipe</a>
+          <a href="#">FAQ</a>
+        </div>
+      </li>
+      <li class="has-drop"><a href="#">Donation <i class="fa fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <a href="#">Faire un don</a>
+        </div>
+      </li>
+      <li class="has-drop"><a href="#">Événement <i class="fa fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <a href="#">Événements</a>
+        </div>
+      </li>
+      <li class="has-drop"><a href="#">Blog <i class="fa fa-chevron-down"></i></a>
+        <div class="dropdown">
+          <a href="#">Articles</a>
+        </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <i class="fa fa-search nav-search"></i>
+      <a href="#" class="btn-join">
+        <span class="btn-join-icon"><i class="fa fa-chevron-right"></i></span>
+        Rejoignez-nous
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <div class="contact-hero">
+    <div class="contact-hero-bg"></div>
+    <div class="contact-hero-content">
+      <h1>Contactez-nous</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Maison</a>
+        <i class="fa fa-chevron-right"></i>
+        <span>Contactez-nous</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ CARTES INFO ══ -->
+  <section class="contact-cards">
+    <div class="container contact-cards-grid">
+      <div class="ccard">
+        <div class="ccard-icon"><i class="fa fa-phone"></i></div>
+        <small>Numéro de téléphone</small>
+        <strong>+44 204 577 0077</strong>
+      </div>
+      <div class="ccard">
+        <div class="ccard-icon"><i class="fa fa-comment-dots"></i></div>
+        <small>Adresse email</small>
+        <strong>fandi@gmail.com</strong>
+      </div>
+      <div class="ccard">
+        <div class="ccard-icon"><i class="fa fa-map-marker-alt"></i></div>
+        <small>Adresse du bureau</small>
+        <strong>Avenue Washington, New York</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GOOGLE MAP ══ -->
+  <div class="contact-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902!2d89.2482!3d25.7439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc37c7b5f7f023%3A0x7e4d4b4b4b4b4b4b!2sRangpur!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- ══ FORMULAIRE ══ -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="contact-form-header">
+        <span class="eyebrow">Contactez-nous</span>
+        <h2>N'hésitez pas à nous écrire à tout moment</h2>
+      </div>
+      <div class="contact-form">
+        <div class="form-row">
+          <input type="text" class="cf-input" placeholder="Votre nom"/>
+          <input type="email" class="cf-input" placeholder="Adresse email"/>
+        </div>
+        <div class="form-full">
+          <input type="text" class="cf-input" placeholder="Sujet"/>
+        </div>
+        <div class="form-full">
+          <textarea class="cf-input" placeholder="Saisissez votre message"></textarea>
+        </div>
+        <button class="btn-contact">
+          <span class="btn-contact-icon"><i class="fa fa-chevron-right"></i></span>
+          Entrer en contact
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-topbar-orange">
+      <div class="container footer-topbar-grid">
+        <div class="ftb-item">
+          <div class="ftb-icon-circle"><i class="fa fa-map-marker-alt"></i></div>
+          <div><small>Adresse</small><span>4648 Rocky Road Philadelphia PA, 1920</span></div>
+        </div>
+        <div class="ftb-item">
+          <div class="ftb-icon-circle"><i class="fa fa-envelope"></i></div>
+          <div><small>Envoyer un e-mail</small><a href="mailto:info@exemple.com">info@exemple.com</a></div>
+        </div>
+        <div class="ftb-item">
+          <div class="ftb-icon-circle"><i class="fa fa-phone"></i></div>
+          <div><small>Appelez les urgences</small><a href="tel:88012365499">+88 0123 654 99</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container footer-main-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:16px">
+            <div class="logo-icon">♥</div><span>Charitics</span>
+          </a>
+          <p>Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, une lacinia curabitur lacinia mollis.</p>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Liens rapides</h4>
+          <ul>
+            <li><a href="about.html"><i class="fa fa-chevron-right"></i> À propos de nous</a></li>
+            <li><a href="#"><i class="fa fa-chevron-right"></i> Nos services</a></li>
+            <li><a href="#"><i class="fa fa-chevron-right"></i> Nos blogs</a></li>
+            <li><a href="#"><i class="fa fa-chevron-right"></i> FAQ</a></li>
+            <li><a href="contact.html"><i class="fa fa-chevron-right"></i> Contactez-nous</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Articles récents</h4>
+          <div class="recent-post">
+            <img src="https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?w=100&q=80" alt=""/>
+            <div><small><i class="fa fa-calendar-alt"></i> 12 mai 2025</small><a href="#">Il existe de nombreuses variantes de passages</a></div>
+          </div>
+          <div class="recent-post">
+            <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=100&q=80" alt=""/>
+            <div><small><i class="fa fa-calendar-alt"></i> 12 mai 2025</small><a href="#">Il existe de nombreuses variantes de passages</a></div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contactez-nous</h4>
+          <p class="footer-contact-info"><i class="fa fa-envelope"></i> info@example.com</p>
+          <p class="footer-contact-info"><i class="fa fa-phone"></i> 123-456-7890</p>
+          <div class="newsletter-inline">
+            <input type="email" placeholder="Votre adresse e-mail"/>
+            <button><i class="fa fa-arrow-right"></i></button>
+          </div>
+          <label class="check-label">
+            <input type="checkbox"/> Je suis d'accord avec le <a href="#">politique de confidentialité</a>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-orange">
+      <div class="container footer-bottom-inner">
+        <span>© 2026 Charitics. Tous droits réservés.</span>
+        <div>
+          <a href="#">Conditions générales</a>
+          <a href="#">politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backTop"><i class="fa fa-chevron-up"></i></button>
+
+  <script>
+    // Hamburger
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('navMenu').classList.toggle('open');
+    });
+    // Back to top
+    window.addEventListener('scroll', () => {
+      document.getElementById('backTop').classList.toggle('show', window.scrollY > 300);
+    });
+    document.getElementById('backTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
