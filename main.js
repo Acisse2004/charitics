@@ -182,7 +182,11 @@ function toggleAcc(header) {
   document.querySelectorAll('.acc-item.open').forEach(i => i.classList.remove('open'));
   if (!isOpen) item.classList.add('open');
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 800683866ac60eb05aadd8b03a25767b5fd55fec
+=======
+}
+>>>>>>> 4f8f4544735284700678b0cae56208b378081197
