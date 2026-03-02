@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Charitics – For The People & Cause You Care About</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- ════════════════════════════════════
+     NAVBAR
+════════════════════════════════════ -->
+<nav id="navbar">
+
+  <a href="#hero" class="nav-logo">
+    <svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#f5610a"/></svg>
+    Charitics
+  </a>
+
+  <!-- Desktop -->
+  <ul class="nav-links">
+    <li class="nav-item">
+      <button class="nav-link">Home <span class="nav-caret">▾</span></button>
+      <div class="nav-drop"><a href="#hero">Home Main</a><a href="#">Home 2</a></div>
+    </li>
+    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+    <li class="nav-item">
+      <button class="nav-link">Pages <span class="nav-caret">▾</span></button>
+      <div class="nav-drop">
+        <a href="#">Services</a>
+        <a href="#">Service Details</a>
+        <a href="#">Projects</a>
+        <a href="#">Project Details</a>
+        <a href="#team">Team</a>
+        <a href="#">Team Member Details</a>
+        <a href="#">Pricing Plans</a>
+        <a href="#">FAQs</a>
+        <a href="#">404</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link">Donation <span class="nav-caret">▾</span></button>
+      <div class="nav-drop"><a href="#donations">Donation Listing</a><a href="#">Donation Details</a></div>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link">Event <span class="nav-caret">▾</span></button>
+      <div class="nav-drop"><a href="#events">Events</a><a href="#">Event Details</a></div>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link">Blog <span class="nav-caret">▾</span></button>
+      <div class="nav-drop"><a href="#blog">Blog Grid</a><a href="#">Blog Details</a></div>
+    </li>
+    <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <button class="nav-search" aria-label="Rechercher">
+      <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </button>
+    <a href="#footer" class="btn btn-or" style="display:inline-flex">
+      <span class="btn-ico">»</span>Join With us
+    </a>
+    <!-- HAMBURGER -->
+    <button class="hamburger" id="hamBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+</nav>
+
+
+<!-- ════════════════════════════════════
+     MENU MOBILE avec sous-menus
+════════════════════════════════════ -->
+<div id="mobile-menu" role="dialog" aria-label="Navigation" aria-modal="true">
+
+  <div class="mob-section-title">Navigation principale</div>
+
+  <!-- Home avec sous-menu -->
+  <div class="mob-parent">
+    <span class="mob-link-icon">🏠</span>
+    <span class="mob-label">Home</span>
+    <span class="mob-arrow">▾</span>
+  </div>
+  <div class="mob-sub">
+    <a href="#hero">Home Main</a>
+    <a href="#">Home 2</a>
+  </div>
+
+  <!-- About (simple) -->
+  <a href="#about" class="mob-link">
+    <span class="mob-link-icon">ℹ️</span> About
+  </a>
+
+  <!-- Pages avec sous-menu -->
+  <div class="mob-parent">
+    <span class="mob-link-icon">📄</span>
+    <span class="mob-label">Pages</span>
+    <span class="mob-arrow">▾</span>
+  </div>
+  <div class="mob-sub">
+    <a href="#">Services</a>
+    <a href="#">Service Details</a>
+    <a href="#">Projects</a>
+    <a href="#">Project Details</a>
+    <a href="#team">Team</a>
+    <a href="#">Team Member Details</a>
+    <a href="#">Pricing Plans</a>
+    <a href="#">FAQs</a>
+    <a href="#">404</a>
+  </div>
+
+  <!-- Donation avec sous-menu -->
+  <div class="mob-parent">
+    <span class="mob-link-icon">❤️</span>
+    <span class="mob-label">Donation</span>
+    <span class="mob-arrow">▾</span>
+  </div>
+  <div class="mob-sub">
+    <a href="#donations">Donation Listing</a>
+    <a href="#">Donation Details</a>
+  </div>
+
+  <div class="mob-section-title">Discover</div>
+
+  <!-- Event avec sous-menu -->
+  <div class="mob-parent">
+    <span class="mob-link-icon">📅</span>
+    <span class="mob-label">Events</span>
+    <span class="mob-arrow">▾</span>
+  </div>
+  <div class="mob-sub">
+    <a href="#events">Events List</a>
+    <a href="#">Event Details</a>
+  </div>
+
+  <!-- Blog avec sous-menu -->
+  <div class="mob-parent">
+    <span class="mob-link-icon">📰</span>
+    <span class="mob-label">Blog</span>
+    <span class="mob-arrow">▾</span>
+  </div>
+  <div class="mob-sub">
+    <a href="#blog">Blog Grid</a>
+    <a href="#">Blog Details</a>
+  </div>
+
+  <div class="mob-section-title">Contact</div>
+  <a href="#footer" class="mob-link">
+    <span class="mob-link-icon">📞</span> Contact Us
+  </a>
+
+  <div class="mob-cta">
+    <a href="#footer" class="btn btn-or" style="width:100%;justify-content:center">
+      <span class="btn-ico">»</span> Join With Us
+    </a>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════
+     1. HERO
+════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bulge"></div>
+  <div class="hero-cap"></div>
+  <div class="hero-photo"></div>
+
+  <svg class="hero-rings" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+    <circle cx="320" cy="380" r="340" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <circle cx="320" cy="380" r="270" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <circle cx="320" cy="380" r="200" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <circle cx="320" cy="380" r="130" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  </svg>
+
+  <div class="wrap" style="position:relative;z-index:4;width:100%">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="#f5610a"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        Change The World Together
+      </div>
+      <h1 class="hero-title">Magatte Mbengue &amp;<br>developpeur web</h1>
+      <p class="hero-desc">It is a long established fact that a reader will be distracted lorem the readable content of a page when looking at layout the point lorem established fact that It is a long established</p>
+      <div class="hero-cta">
+        <a href="#donations" class="btn btn-or"><span class="btn-ico">»</span>Make Donation</a>
+        <div class="av-row">
+          <div class="av-stack">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+            <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="">
+          </div>
+          <span class="av-badge">2.M</span>
+          <span class="av-label">Active donors</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-hands" aria-hidden="true">
+    <span class="hand">🖐</span><span class="hand">🖐</span><span class="hand">🖐</span>
+    <span class="hand">🖐</span><span class="hand">🖐</span>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     2. ABOUT
+════════════════════════════════════ -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="about-layout">
+
+      <div class="about-visual">
+        <div class="about-blob-1"></div>
+        <div class="about-blob-2"></div>
+        <div class="about-heart-wrap">
+          <div class="about-heart-bg"></div>
+          <div class="about-main-photo"></div>
+        </div>
+        <div class="about-small-photo"></div>
+        <div class="about-badge">
+          <div class="badge-num">15+</div>
+          <div class="badge-txt">Years Of<br>Experience</div>
+        </div>
+        <div class="about-team-photos">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+          <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+          <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="">
+        </div>
+      </div>
+
+      <div>
+        <div class="tag-label">About US</div>
+        <h2 class="h2">Helping Each Other can Make World Better</h2>
+        <p class="para">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit The aspernaturaut odit aut fugit, sed quia consequuntur. Nonprofits around the world apply and join us to access more funding.</p>
+        <div class="about-feature">
+          <div class="about-feat-icon">🤝</div>
+          <div class="about-feat-text">
+            <strong>Start Helping Team</strong>
+            <small>There are many variations of solve</small>
+          </div>
+          <div class="about-team-img"></div>
+        </div>
+        <div class="about-cta">
+          <a href="#donations" class="btn btn-or"><span class="btn-ico">»</span>Explore More</a>
+          <div class="about-divider"></div>
+          <div class="call-box">
+            <div class="call-icon">📞</div>
+            <div class="call-text">
+              <span>Call Any Time</span>
+              <strong>+61 2345 678 990</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     3. DONATIONS
+════════════════════════════════════ -->
+<section class="sec sec-cream" id="donations">
+    <div class="donations-header wrap">
+      <div>
+        <div class="tag-label">Help &amp; Donate us</div>
+        <h2 class="h2">Inspiring and Helping for<br>Better Lifestyle</h2>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+        <div class="av-row">
+          <div class="av-stack">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+            <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="">
+          </div>
+          <span class="av-badge">2.M</span>
+        </div>
+        <div style="display:flex;gap:10px">
+          <button class="arr-btn" id="donPrev">&#8249;</button>
+          <button class="arr-btn" id="donNext">&#8250;</button>
+        </div>
+      </div>
+    </div>
+    <div class="slider-container" style="padding:0 50px">
+      <div class="slider-track" id="donTrack">
+        <div class="don-card"><div class="don-card-img" style="background-image:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80&auto=format&fit=crop')"><span class="don-card-badge">Foods</span></div><div class="don-card-body"><div class="don-pct-row"><span class="don-pct">83%</span></div><div class="don-bar"><div class="don-bar-fill" style="width:83%"></div></div><div class="don-meta"><span class="raised">Raised : $25,000</span><span>Goal : $30,000</span></div><h3 class="don-title">Lifes kills for Children in South African peoples</h3><p class="don-desc">We work together to make a lasting difference, helping people. With kindness and hard work</p><button class="don-btn"><span class="don-btn-ico">»</span>Donate now</button></div></div>
+        <div class="don-card"><div class="don-card-img" style="background-image:url('https://images.unsplash.com/photo-1559223607-a43c990c692c?w=400&q=80&auto=format&fit=crop')"><span class="don-card-badge">Foods</span></div><div class="don-card-body"><div class="don-pct-row"><span class="don-pct">71%</span></div><div class="don-bar"><div class="don-bar-fill" style="width:71%"></div></div><div class="don-meta"><span class="raised">Raised : $25,000</span><span>Goal : $30,000</span></div><h3 class="don-title">Lifes kills for Children in South African peoples</h3><p class="don-desc">We work together to make a lasting difference, helping people. With kindness and hard work</p><button class="don-btn"><span class="don-btn-ico">»</span>Donate now</button></div></div>
+        <div class="don-card"><div class="don-card-img" style="background-image:url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=400&q=80&auto=format&fit=crop')"><span class="don-card-badge">Foods</span></div><div class="don-card-body"><div class="don-pct-row"><span class="don-pct">95%</span></div><div class="don-bar"><div class="don-bar-fill" style="width:95%"></div></div><div class="don-meta"><span class="raised">Raised : $25,000</span><span>Goal : $30,000</span></div><h3 class="don-title">Lifes kills for Children in South African peoples</h3><p class="don-desc">We work together to make a lasting difference, helping people. With kindness and hard work</p><button class="don-btn"><span class="don-btn-ico">»</span>Donate now</button></div></div>
+        <div class="don-card"><div class="don-card-img" style="background-image:url('https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=400&q=80&auto=format&fit=crop')"><span class="don-card-badge">Foods</span></div><div class="don-card-body"><div class="don-pct-row"><span class="don-pct">53%</span></div><div class="don-bar"><div class="don-bar-fill" style="width:53%"></div></div><div class="don-meta"><span class="raised">Raised : $25,000</span><span>Goal : $30,000</span></div><h3 class="don-title">Lifes kills for Children in South African peoples</h3><p class="don-desc">We work together to make a lasting difference, helping people. With kindness and hard work</p><button class="don-btn"><span class="don-btn-ico">»</span>Donate now</button></div></div>
+        <div class="don-card"><div class="don-card-img" style="background-image:url('https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400&q=80&auto=format&fit=crop')"><span class="don-card-badge">Foods</span></div><div class="don-card-body"><div class="don-pct-row"><span class="don-pct">64%</span></div><div class="don-bar"><div class="don-bar-fill" style="width:64%"></div></div><div class="don-meta"><span class="raised">Raised : $25,000</span><span>Goal : $30,000</span></div><h3 class="don-title">Lifes kills for Children in South African peoples</h3><p class="don-desc">We work together to make a lasting difference, helping people. With kindness and hard work</p><button class="don-btn"><span class="don-btn-ico">»</span>Donate now</button></div></div>
+        <div class="don-card"><div class="don-card-img" style="background-image:url('https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=400&q=80&auto=format&fit=crop')"><span class="don-card-badge">Foods</span></div><div class="don-card-body"><div class="don-pct-row"><span class="don-pct">80%</span></div><div class="don-bar"><div class="don-bar-fill" style="width:80%"></div></div><div class="don-meta"><span class="raised">Raised : $25,000</span><span>Goal : $30,000</span></div><h3 class="don-title">Lifes kills for Children in South African peoples</h3><p class="don-desc">We work together to make a lasting difference, helping people. With kindness and hard work</p><button class="don-btn"><span class="don-btn-ico">»</span>Donate now</button></div></div>
+        <div class="don-card"><div class="don-card-img" style="background-image:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80&auto=format&fit=crop')"><span class="don-card-badge">Foods</span></div><div class="don-card-body"><div class="don-pct-row"><span class="don-pct">72%</span></div><div class="don-bar"><div class="don-bar-fill" style="width:72%"></div></div><div class="don-meta"><span class="raised">Raised : $25,000</span><span>Goal : $30,000</span></div><h3 class="don-title">Lifes kills for Children in South African peoples</h3><p class="don-desc">We work together to make a lasting difference, helping people. With kindness and hard work</p><button class="don-btn"><span class="don-btn-ico">»</span>Donate now</button></div></div>
+        <div class="don-card"><div class="don-card-img" style="background-image:url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=400&q=80&auto=format&fit=crop')"><span class="don-card-badge">Foods</span></div><div class="don-card-body"><div class="don-pct-row"><span class="don-pct">88%</span></div><div class="don-bar"><div class="don-bar-fill" style="width:88%"></div></div><div class="don-meta"><span class="raised">Raised : $25,000</span><span>Goal : $30,000</span></div><h3 class="don-title">Lifes kills for Children in South African peoples</h3><p class="don-desc">We work together to make a lasting difference, helping people. With kindness and hard work</p><button class="don-btn"><span class="don-btn-ico">»</span>Donate now</button></div></div>
+    </div>
+    <div class="dots" id="donDots" style="padding:0 50px">
+      <button class="dot active"></button>
+      <button class="dot"></button>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     4. DONATE NOW
+════════════════════════════════════ -->
+<div id="give-section">
+  <div class="give-section">
+    <div class="give-card">
+      <div class="give-deco"></div>
+      <span class="give-heart-mark">♥</span>
+      <div class="give-form">
+        <h3>Custome Donate Now</h3>
+        <div class="amount-pills">
+          <button class="amount-pill active" data-val="10">$10</button>
+          <button class="amount-pill" data-val="20">$20</button>
+          <button class="amount-pill" data-val="30">$30</button>
+          <button class="amount-pill" data-val="40">$40</button>
+          <button class="amount-pill" data-val="50">$50</button>
+        </div>
+        <div class="give-input-row">
+          <input class="give-input" id="customAmt" type="number" value="10" min="1" placeholder="Custom amount">
+          <button class="btn btn-or"><span class="btn-ico">»</span>Donate Now</button>
+        </div>
+      </div>
+      <div class="give-info">
+        <div class="give-tag-label">♥ Donate Now</div>
+        <h2 class="h2 h2-white" style="font-size:clamp(1.4rem,2vw,1.9rem)">Support Kids by Raising Valuable Donations</h2>
+        <div class="give-progress-bar"><div class="give-progress-fill"></div></div>
+        <div class="give-progress-meta">
+          <span>Raised : $25,000</span><strong>84%</strong><span>Goal : $30,000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════
+     5. STATS avec icônes SVG
+════════════════════════════════════ -->
+<div class="stats-section">
+  <div class="stats-grid">
+
+    <!-- Total Happy Children -->
+    <div class="stat-item">
+      <div class="stat-icon-circle">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div class="stat-number" data-target="260">0</div>
+      <div class="stat-label">Total Happy Children</div>
+    </div>
+
+    <!-- Total Our Volunteer -->
+    <div class="stat-item">
+      <div class="stat-icon-circle">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <div class="stat-number" data-target="110">0</div>
+      <div class="stat-label">Total Our Volunteer</div>
+    </div>
+
+    <!-- Our Products & Gifts -->
+    <div class="stat-item">
+      <div class="stat-icon-circle">
+        <svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+      </div>
+      <div class="stat-number" data-target="190">0</div>
+      <div class="stat-label">Our Products &amp; Gifts</div>
+    </div>
+
+    <!-- Worldwide Donor -->
+    <div class="stat-item">
+      <div class="stat-icon-circle">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="stat-number" data-target="560">0</div>
+      <div class="stat-label">Worldwide Donor</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════
+     6. EVENTS
+════════════════════════════════════ -->
+<section class="sec events-section" id="events">
+  <div class="wrap">
+    <div class="events-header">
+      <div>
+        <div class="tag-label">Upcoming Events</div>
+        <h2 class="h2 h2-white">Charitics Information Of<br>Event Schedule</h2>
+      </div>
+      <a href="#" class="btn btn-or"><span class="btn-ico">»</span>Explore More</a>
+    </div>
+    <div class="events-grid">
+      <div class="event-card">
+        <div class="event-date-col"><div class="event-day">29</div><div class="event-month">July</div></div>
+        <div class="event-thumb" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=350&q=80&auto=format&fit=crop')"></div>
+        <div class="event-body"><div class="event-venue-lbl">Venue</div><h3 class="event-title"><a href="#">Manager Disapproved of the Most Recent Work.</a></h3><p class="event-desc">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut</p><div class="event-venue-addr"><span class="event-pin">📍</span>350 5th Ave New York, NY 118 United States</div><button class="event-btn">» Event Details</button></div>
+      </div>
+      <div class="event-card">
+        <div class="event-date-col"><div class="event-day">29</div><div class="event-month">July</div></div>
+        <div class="event-thumb" style="background-image:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=350&q=80&auto=format&fit=crop')"></div>
+        <div class="event-body"><div class="event-venue-lbl">Venue</div><h3 class="event-title orange"><a href="#">Manager Disapproved of the Most Recent Work.</a></h3><p class="event-desc">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut</p><div class="event-venue-addr"><span class="event-pin">📍</span>350 5th Ave New York, NY 118 United States</div><button class="event-btn">» Event Details</button></div>
+      </div>
+      <div class="event-card">
+        <div class="event-date-col"><div class="event-day">20</div><div class="event-month">July</div></div>
+        <div class="event-thumb" style="background-image:url('https://images.unsplash.com/photo-1559223607-a43c990c692c?w=350&q=80&auto=format&fit=crop')"></div>
+        <div class="event-body"><div class="event-venue-lbl">Venue</div><h3 class="event-title"><a href="#">Manager Disapproved of the Most Recent Work.</a></h3><p class="event-desc">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut</p><div class="event-venue-addr"><span class="event-pin">📍</span>350 5th Ave New York, NY 118 United States</div><button class="event-btn">» Event Details</button></div>
+      </div>
+      <div class="event-card">
+        <div class="event-date-col"><div class="event-day">25</div><div class="event-month">July</div></div>
+        <div class="event-thumb" style="background-image:url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=350&q=80&auto=format&fit=crop')"></div>
+        <div class="event-body"><div class="event-venue-lbl">Venue</div><h3 class="event-title"><a href="#">Manager Disapproved of the Most Recent Work.</a></h3><p class="event-desc">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernaturaut</p><div class="event-venue-addr"><span class="event-pin">📍</span>350 5th Ave New York, NY 118 United States</div><button class="event-btn">» Event Details</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     7. VOLUNTEER / WHY JOIN
+════════════════════════════════════ -->
+<section class="sec sec-cream">
+  <div class="wrap">
+    <div class="volunteer-layout">
+      <div class="volunteer-photo">
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700&q=85&auto=format&fit=crop" alt="Volunteers">
+      </div>
+      <div>
+        <div class="tag-label">Join us</div>
+        <h2 class="h2">Why We Need You Become a Volunteer</h2>
+        <p class="para">We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies.</p>
+        <div class="accordion">
+          <div class="acc-item open">
+            <div class="acc-header" onclick="toggleAcc(this)">Recognition and Fulfillment <span class="acc-plus">+</span></div>
+            <div class="acc-body"><p>Consectetur adipiscing elit Aenean scelerisque augue vitae consequat. E-learning is suitable for students, professionals, and anyone interested in continuous growth.</p></div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-header" onclick="toggleAcc(this)">Why Join Us as a Volunteer? <span class="acc-plus">+</span></div>
+            <div class="acc-body"><p>Consectetur adipiscing elit Aenean scelerisque augue vitae consequat. E-learning is suitable for students, professionals, and anyone interested in continuous growth.</p></div>
+          </div>
+          <div class="acc-item">
+            <div class="acc-header" onclick="toggleAcc(this)">Be Part of a Community <span class="acc-plus">+</span></div>
+            <div class="acc-body"><p>Consectetur adipiscing elit Aenean scelerisque augue vitae consequat. E-learning is suitable for students, professionals, and anyone interested in continuous growth.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     8. TEAM
+════════════════════════════════════ -->
+<section class="sec" id="team">
+  <div class="wrap">
+    <div class="team-header">
+      <div>
+        <div class="tag-label">Our Team</div>
+        <h2 class="h2">Skilled Legal Professionals<br>Dedicated to You</h2>
+      </div>
+      <a href="#footer" class="btn btn-or"><span class="btn-ico">»</span>Join With us</a>
+    </div>
+    <div class="team-grid">
+      <div class="team-card"><div class="team-photo"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80&auto=format&fit=crop&crop=top" alt=""></div><div class="team-card-body"><div class="team-name">Sarah Johnson</div><div class="team-role">Volunteer Lead</div><div class="team-socials"><a><i>f</i></a><a><i>t</i></a><a><i>in</i></a></div></div></div>
+      <div class="team-card"><div class="team-photo"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80&auto=format&fit=crop&crop=top" alt=""></div><div class="team-card-body"><div class="team-name">James Wilson</div><div class="team-role">Fundraising Director</div><div class="team-socials"><a><i>f</i></a><a><i>t</i></a><a><i>in</i></a></div></div></div>
+      <div class="team-card"><div class="team-photo"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80&auto=format&fit=crop&crop=top" alt=""></div><div class="team-card-body"><div class="team-name">Emily Chen</div><div class="team-role">Community Manager</div><div class="team-socials"><a><i>f</i></a><a><i>t</i></a><a><i>in</i></a></div></div></div>
+      <div class="team-card"><div class="team-photo"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80&auto=format&fit=crop&crop=top" alt=""></div><div class="team-card-body"><div class="team-name">Michael Torres</div><div class="team-role">Program Officer</div><div class="team-socials"><a><i>f</i></a><a><i>t</i></a><a><i>in</i></a></div></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     9. TESTIMONIALS
+════════════════════════════════════ -->
+<section class="sec sec-cream">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:44px">
+      <div class="tag-label" style="justify-content:center">Testimonials</div>
+      <h2 class="h2 h2-center">What They Are Talking About Charitics</h2>
+    </div>
+  </div>
+  <div class="testi-outer">
+    <div class="testi-container">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan.</p><div class="testi-author"><img src="https://randomuser.me/api/portraits/women/65.jpg" alt=""><div><div class="testi-name">Esther Howard</div><div class="testi-role">Web Designer</div></div></div><div class="testi-quote">»</div></div>
+        <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan.</p><div class="testi-author"><img src="https://randomuser.me/api/portraits/men/41.jpg" alt=""><div><div class="testi-name">Mark Davis</div><div class="testi-role">Developer</div></div></div><div class="testi-quote">»</div></div>
+        <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan.</p><div class="testi-author"><img src="https://randomuser.me/api/portraits/women/33.jpg" alt=""><div><div class="testi-name">Anna Lee</div><div class="testi-role">NGO Director</div></div></div><div class="testi-quote">»</div></div>
+        <div class="testi-card"><div class="testi-stars">★★★★☆</div><p class="testi-text">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan.</p><div class="testi-author"><img src="https://randomuser.me/api/portraits/men/55.jpg" alt=""><div><div class="testi-name">Paul Brown</div><div class="testi-role">Volunteer</div></div></div><div class="testi-quote">»</div></div>
+        <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan.</p><div class="testi-author"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt=""><div><div class="testi-name">Lisa Wong</div><div class="testi-role">Donor</div></div></div><div class="testi-quote">»</div></div>
+      </div>
+    </div>
+    <div class="dots" id="testiDots" style="padding:0 50px">
+      <button class="dot active"></button><button class="dot"></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     10. BLOG
+════════════════════════════════════ -->
+<section class="sec" id="blog">
+  <div class="wrap">
+    <div class="blog-layout">
+      <div class="blog-left">
+        <div class="tag-label">Latest Blog</div>
+        <h2 class="h2">Read Our Latest News</h2>
+        <p class="para">We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies.</p>
+        <div class="blog-arrows">
+          <button class="arr-btn" id="blogPrev">&#8249;</button>
+          <button class="arr-btn" id="blogNext">&#8250;</button>
+        </div>
+      </div>
+      <div class="blog-container">
+        <div class="blog-track" id="blogTrack">
+          <div class="blog-card"><div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1577896851231-70ef18881754?w=500&q=80&auto=format&fit=crop')"><div class="blog-date-box">15<span>Dec</span></div></div><div class="blog-body"><div class="blog-meta">By Admin &nbsp;|&nbsp; <strong>Donation</strong></div><h3 class="blog-title"><a href="#">The sun and the sand makes beaches beautiful</a></h3><a href="#" class="read-more">Read More <span>›</span></a></div></div>
+          <div class="blog-card"><div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&q=80&auto=format&fit=crop')"><div class="blog-date-box">15<span>Dec</span></div></div><div class="blog-body"><div class="blog-meta">By Admin &nbsp;|&nbsp; <strong>Donation</strong></div><h3 class="blog-title"><a href="#">The sun and the sand makes beaches beautiful</a></h3><a href="#" class="read-more">Read More <span>›</span></a></div></div>
+          <div class="blog-card"><div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=500&q=80&auto=format&fit=crop')"><div class="blog-date-box">15<span>Dec</span></div></div><div class="blog-body"><div class="blog-meta">By Admin &nbsp;|&nbsp; <strong>Donation</strong></div><h3 class="blog-title"><a href="#">Give Education, It's The Best Gift Ever.</a></h3><a href="#" class="read-more">Read More <span>›</span></a></div></div>
+          <div class="blog-card"><div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=500&q=80&auto=format&fit=crop')"><div class="blog-date-box">15<span>Dec</span></div></div><div class="blog-body"><div class="blog-meta">By Admin &nbsp;|&nbsp; <strong>Donation</strong></div><h3 class="blog-title"><a href="#">Don't treat oceans as universal garbage cans</a></h3><a href="#" class="read-more">Read More <span>›</span></a></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     11. GALLERY
+════════════════════════════════════ -->
+<div class="gallery-strip">
+  <div class="gallery-track">
+    <div class="gallery-circle"><img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <div class="gallery-circle"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <div class="gallery-circle"><img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <div class="gallery-circle highlight"><img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <div class="gallery-circle"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <div class="gallery-circle"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <!-- Duplicate for infinite loop -->
+    <div class="gallery-circle"><img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <div class="gallery-circle"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <div class="gallery-circle"><img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <div class="gallery-circle highlight"><img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <div class="gallery-circle"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&q=70&auto=format&fit=crop" alt=""></div>
+    <div class="gallery-circle"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=400&q=70&auto=format&fit=crop" alt=""></div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════
+     12. INFO STRIP — carte orange flottante
+════════════════════════════════════ -->
+<div class="info-strip">
+  <div class="info-card">
+
+    <!-- Adresse -->
+    <div class="info-item">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div>
+        <div class="info-label">Address</div>
+        <div class="info-value">4648 Rocky Road Philadelphia PA, 1920</div>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="info-item">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div>
+        <div class="info-label">Send Email</div>
+        <div class="info-value">info@example.com</div>
+      </div>
+    </div>
+
+    <!-- Téléphone -->
+    <div class="info-item">
+      <div class="info-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+      </div>
+      <div>
+        <div class="info-label">Call Emergency</div>
+        <div class="info-value">+88 0123 654 99</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer id="footer">
+  <div class="footer-top">
+
+    <!-- Col 1 : Brand -->
+    <div>
+      <div class="footer-logo">
+        <svg width="22" height="22" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#f5610a"/></svg>
+        Charitics
+      </div>
+      <p class="footer-desc">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
+      <!-- Socials avec icônes SVG réels -->
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20.06 12 20.06 12 20.06s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Col 2 : Quick Links -->
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <div class="footer-links">
+        <a href="#about">About Us</a>
+        <a href="#">Our Services</a>
+        <a href="#blog">Our Blogs</a>
+        <a href="#">FAQ'S</a>
+        <a href="#footer">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- Col 3 : Recent Posts -->
+    <div>
+      <div class="footer-col-title">Recent Posts</div>
+      <div class="footer-post">
+        <img class="footer-post-img" src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=140&q=70&auto=format&fit=crop" alt="Post">
+        <div>
+          <div class="footer-post-date">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            May 12, 2025
+          </div>
+          <div class="footer-post-title"><a href="#">There are many vario ns of passages of</a></div>
+        </div>
+      </div>
+      <div class="footer-post">
+        <img class="footer-post-img" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=140&q=70&auto=format&fit=crop" alt="Post">
+        <div>
+          <div class="footer-post-date">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            May 12, 2025
+          </div>
+          <div class="footer-post-title"><a href="#">There are many vario ns of passages of</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Col 4 : Contact + Newsletter -->
+    <div>
+      <div class="footer-col-title">Contact Us</div>
+      <ul class="footer-contact-list">
+        <li>
+          <span class="ci-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+          <a href="mailto:info@example.com">info@example.com</a>
+        </li>
+        <li>
+          <span class="ci-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+          </span>
+          <a href="tel:1234567890">123-456-7890</a>
+        </li>
+      </ul>
+
+      <!-- Newsletter input -->
+      <div class="footer-newsletter">
+        <input type="email" placeholder="Your Email Address">
+        <button aria-label="Subscribe">
+          <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+
+      <!-- Privacy Policy -->
+      <div class="footer-privacy">
+        <input type="checkbox" id="pp">
+        <label for="pp">I agree with the <a href="#">Privacy Policy</a></label>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Barre orange du bas -->
+  <div class="footer-bottom">
+    <span>© 2026 Charitics. All rights reserved</span>
+    <div class="footer-bottom-links">
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>
