@@ -36,6 +36,8 @@ ul   { list-style:none; }
 }
 .eyebrow::after { content:''; width:30px; height:2px; background:var(--orange); display:inline-block; }
 
+/* Titre section */
+
 .section-title {
   font-family:'Playfair Display',serif;
   font-size:clamp(1.8rem,3vw,2.6rem);
